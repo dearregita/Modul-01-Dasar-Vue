@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    
+</head>
+<body>
+    <div id="app">
+        <img v-bind:src="url">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+<script>
+var app =  new Vue({
+    el : '#app',
+    data: {
+        "url" : "https://www.fullstackpython.com/img/logos/vuejs-wide.png"
+        }
+})
+</script>

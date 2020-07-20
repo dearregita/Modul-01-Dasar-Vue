@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    
+</head>
+<body>
+    <div id="app">
+        <p v-if="itemInStock > 10">{{itemInStock}} in stock</p>>
+        <p v-else-if="itemInStock > 0"> Hurry up, only {{itemInStock}} items left</p>>
+        <p v-else>Sorry, we are all out</p>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+<script>
+var app =  new Vue({
+    el : '#app',
+    data: {
+            "itemInStock" : 0
+    }
+})
+</script>
